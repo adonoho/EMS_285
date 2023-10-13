@@ -1,0 +1,17 @@
+name: ems285
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - blas[build=mkl]
+  - python
+  - numpy
+  - pandas
+  - google-auth
+  - pandas-gbq>=0.19.2
+  - dask
+  - coiled
+  - sqlalchemy
+variables:
+  MKL_NUM_THREADS: '1'
+  OPENBLAS_NUM_THREADS: '1'
